@@ -1,0 +1,80 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void ProductList()
+	{
+		String A[]={"Apple","Orange","Mango","Lichi","Pineapple"};
+		for(int i=0;i<5;i++){
+		System.out.println(A[i]);
+		}
+		
+	}
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		HashMap<String,String> Customer=new HashMap<String,String>();  
+
+		
+		for(;;)
+		{
+			System.out.println("Enter 1 to Register \n Enter 2 to Create an order \n Enter 3 to view orders \n Enter 4 to Exit");
+			int ch;
+			Switch(ch)
+			{
+				case 1:
+					
+					String name=sc.next();
+					String Password=sc.next();
+					Customer.put(name,Password);
+					break;
+					
+				case 2:
+					System.out.println("Login the user")
+					String EnterUsername=sc.next();
+					String Password=sc.next();
+					if(Customer.containsKey(EnterUsername))
+					{
+						if(Customer.containsValue(Password))
+						{
+							System.out.println("Access Allowed");
+							ProductList();
+							ArrayList<String> ProductSelected=new ArrayList<String>();
+							String ProductName=Sc.next();
+							ProductSelected.add();
+						}
+						
+					}
+					case 3:
+						for(int i=0;i<ProductSelected.size();i++)
+						{
+							System.out.println(ProductSelected.get(i));
+						}
+					case 4:
+						System.exit();
+					
+					
+			}
+		}
+	}
+}
+class Customer{
+	String Name;
+	private String Pass;
+	public Customer(String name,String Password)
+	{
+		this.Name=name;
+		this.Pass=Password;
+	}
+}
+class Product{
+public ProductList(){
+	
+}
+	
+}
